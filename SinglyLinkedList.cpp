@@ -194,6 +194,7 @@ class SingleLinkedList
             {
                 cout << "Pilihan salah!." << endl;
             }
+            break;
         }
     }
 };
