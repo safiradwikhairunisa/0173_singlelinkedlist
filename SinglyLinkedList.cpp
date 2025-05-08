@@ -150,7 +150,25 @@ class SingleLinkedList
                      << "\nMasukkan no mahasiswa yang akan dihapus: ";
                 cin >> nim;
                 if (mhs.delNode(nim) ==false)
-                
+                    cout << endl
+                         << "Data tidak ditemukan" << endl;
+                else
+                    cout << endl
+                         << "Data dengan nomor mahasiswa " << nim << "berhasil dihapus" << endl;
+            }
+            break;
+            case '3':
+            {
+                mhs.traverse();
+            }
+            break;
+            case '4':
+            {
+                if (mhs.listEmpty() == true)
+                {
+                    cout << "\nList kosong\n";
+                    break;
+                }
             }
         }
     }
