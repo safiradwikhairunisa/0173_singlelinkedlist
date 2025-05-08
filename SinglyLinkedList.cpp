@@ -110,7 +110,7 @@ class SingleLinkedList
             cout << endl;
         }
     }
-
+};
     int main()
     {
         SingleLinkedList mhs;
@@ -196,5 +196,5 @@ class SingleLinkedList
             }
             break;
         }
-    }
-};
+    }while (ch != '5');
+}
