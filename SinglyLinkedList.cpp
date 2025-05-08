@@ -9,15 +9,16 @@ class Node
     Node *next;
 };
 
-class List
+class SingleLinkedList
 {
     Node *START;
 
     public:
-    List()
+    SingleLinkedList()
     {
         START = NULL;
     }
+
     void addNode()
     {
         int nim;
@@ -26,6 +27,7 @@ class List
 
         Node *nodeBaru = new Node;
         nodeBaru->noMhs = nim;
+
         if (START == NULL || nim <= START->noMhs)
         {
             if ((START != NULL) && (nim == START->noMhs))
@@ -47,7 +49,13 @@ class List
                 cout << "\nDuplikasi noMhs tidak diijinkan\n";
                 return;
             }
-            
+            previous = current;
+            current = current->next;
         }
+
+        nodeBaru->next = current;
+        previous->next = nodeBaru;
     }
+
+    bool listEmpty()
 }
