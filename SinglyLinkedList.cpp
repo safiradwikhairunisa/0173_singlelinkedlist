@@ -57,5 +57,11 @@ class SingleLinkedList
         previous->next = nodeBaru;
     }
 
+
     bool listEmpty()
+    {
+        return (START == NULL);
+    }
+    
+
 }
