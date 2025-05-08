@@ -91,4 +91,23 @@ class SingleLinkedList
         delete current;
         return true;
     }
-}
+
+    void traverse()
+    {
+        if (listEmpty())
+        {
+            cout << "\nList kosong\n";
+        }
+        else
+        {
+            cout << "\nData didalam list adalah:\n";
+            Node *currentNode = START;
+            while (currentNode != NULL)
+            {
+                cout << currentNode->noMhs << endl;
+                currentNode = currentNode->next;
+            }
+            cout << endl;
+        }
+    }
+};
